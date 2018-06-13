@@ -1,5 +1,5 @@
 # DCEcology
-course material of data carpentry workshop Brussels
+course material of data carpentry workshop Brussels, looking forward
 
 ## Introduction
 
