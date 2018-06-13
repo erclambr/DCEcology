@@ -61,9 +61,13 @@ head(missing_dates)
 
 
 
+download.file("https://ndownloader.figshare.com/files/11930600?private_link=fe0cd1848e06456e6f38",
+              
+              "data/surveys_complete.csv")
 
+surveys_complete <-read_csv("data/surveys_complete.csv")      # read_csv functie uit het tidyverse pakket
+head(surveys_complete)
+View(surveys_complete)
 
-download.file("https://figshare.com/s/fe0cd1848e06456e6f38","data/surveys_complete.csv")
-
-
-
+ggplot(data=surveys_complete) # er gebeurt niks omdat ggplot extra info nodig heeft wat te plotten
+ggplot(data=surveys_complete, aes(x=weight, y= hindfoot_length))  #aes= aestethics
