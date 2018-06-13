@@ -71,3 +71,4 @@ View(surveys_complete)
 
 ggplot(data=surveys_complete) # er gebeurt niks omdat ggplot extra info nodig heeft wat te plotten
 ggplot(data=surveys_complete, aes(x=weight, y= hindfoot_length))  #aes= aestethics
+ggplot(data=surveys_complete, aes(x=weight, y= hindfoot_length)) + geom_point()
