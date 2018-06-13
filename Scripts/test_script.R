@@ -114,6 +114,9 @@ myplot<-ggplot(data=yearly_sex_counts, aes(x=year, y=n, color=sex)) +
         axis.text.x= element_text(color="grey20", size= 12, angle=90, hjust=0.5, vjust=0.5))
   labs(title="observed species over time", x="Year of observation", y= "Number of observations")
                                                                                                                                                           ")
-ggsave("plots/my_first_plot.png", myplot, with= 15, hight=10, dpi=300)
+
+ggsave("plots/my_first_plot.png", myplot, width = 15, height=10, dpi=300)
+
+
 
 
